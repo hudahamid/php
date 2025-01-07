@@ -41,6 +41,18 @@
       }
       ?>
 
+      <form action="<?php echo $_SERVER["PHP_SELF"];?>"  method="POST">
+
+      <input type="text" placeholder="naw daxlka" name="naw" >
+      <button type="submit">submit</button>
+      </form>
+
+      <?php
+      if(isset($_POST["naw"])){
+      $name=$_POST["naw"];
+      echo "hi ".$name;
+      }
+      ?>
 
 </body>
 </html>
